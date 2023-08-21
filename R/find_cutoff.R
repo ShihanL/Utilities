@@ -1,4 +1,4 @@
-#' Finds cells which are positive inputted signal
+#' Finds cells which are positive inputted signal, used in the context of tetramer based CITEseq
 #' Make mode tree to calculate peaks
 #' Find best bandwidth and get peak values for first two peaks, assuming data is bimodal
 #' Find minimum between peaks

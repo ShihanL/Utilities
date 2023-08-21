@@ -1,6 +1,6 @@
 Package: utilities
 Type: Package
-Title: Utilities
+Title: Helper functions for bioinformatics analysis
 Version: 0.1.0
 Author: Shihan Li
 Maintainer: shihan.li@unimelb.edu.au
