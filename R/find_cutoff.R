@@ -1,3 +1,5 @@
+#'
+#' @title Find Cutoff
 #' Finds cells which are positive inputted signal, used in the context of tetramer based CITEseq
 #' Make mode tree to calculate peaks
 #' Find best bandwidth and get peak values for first two peaks, assuming data is bimodal
@@ -104,4 +106,17 @@ find_cutoff <- function(data, n_peaks=2, title='',display=TRUE, approach = 1, th
         print(plot)
     }
     return(list(data[which(values > min),, drop = FALSE], plot))
+}
+
+
+#' @title Local Minima
+#' Find location of first local minima
+#' within a sequence of numerical values.
+find_local_min <- function(sequence){
+    for( i in seq_along(sequence)){
+        if(sequence[i] < sequence[i+1])
+        {
+            return(i)
+        }
+    }
 }
