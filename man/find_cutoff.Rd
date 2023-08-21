@@ -2,7 +2,7 @@
 % Please edit documentation in R/find_cutoff.R
 \name{find_cutoff}
 \alias{find_cutoff}
-\title{Finds cells which are positive inputted signal
+\title{Finds cells which are positive inputted signal, used in the context of tetramer based CITEseq
 Make mode tree to calculate peaks
 Find best bandwidth and get peak values for first two peaks, assuming data is bimodal
 Find minimum between peaks}
@@ -27,8 +27,11 @@ find_cutoff(
 
 \item{threhold}{Manual numericl value, will bypass other approaches}
 }
+\value{
+list of two values, first value is a filtered dataframe of values above thresfold and second is ggplot which cutoff used
+}
 \description{
-Finds cells which are positive inputted signal
+Finds cells which are positive inputted signal, used in the context of tetramer based CITEseq
 Make mode tree to calculate peaks
 Find best bandwidth and get peak values for first two peaks, assuming data is bimodal
 Find minimum between peaks

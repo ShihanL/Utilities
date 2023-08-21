@@ -1,11 +1,13 @@
 Package: utilities
 Type: Package
-Title: Helper functions for bioinformatics analysis
+Title: Set of functions for assisting in bioinformatics data processing and analysis
 Version: 0.1.0
-Author: Shihan Li
-Maintainer: shihan.li@unimelb.edu.au
-Description: Set of custom functions for aiding in the preprocessing and analysis of bioinformatics data. 
+Author: Shihanl
+Maintainer: Shihan Li <shihan.li@unimelb.edu.au>
+Description: Set of functions for assisting in bioinformatics data processing and analysis
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
+Imports: 
+    ggplot2, mclust, multimode, tidyverse
